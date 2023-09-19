@@ -4,12 +4,28 @@
     box-sizing: border-box;
 }
 
+header ,
+section h2,
+section h3
+{
+    font-family: "bungee", cursive;
+}
+body,
+input,
+textarea {
+    font-family: "roboto", sans-serif;
+}
+/* cabecalho */
 header {
     padding: 16px 0;
     background-color: #182c61;
     color: #ecf0f1;
 }
-
+header ,
+section h2,
+section h3 {
+    font-weight: normal;
+}
 header nav li {
     display: inline;
     margin-left: 16px;
@@ -26,14 +42,14 @@ header nav li a {
     width: 100%;
     margin: 0 auto;
 }
-
+/*imagem fachada e texto lado a lado*/
 header .container,
 section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+/* tamanho listas de imagens*/
 .brands-list img {
     height: 24px;
 }
@@ -46,12 +62,13 @@ margin-right: 8px;
 section .container {
     align-items: flex-start;
 }
-
+/* espacamentos de sessao*/
 section {
     padding: 24px 0;
 }
 section h2 {
     margin-bottom: 16px;
+    color: #182C61;
 }
 section p {
     color: #182C61;
@@ -63,7 +80,7 @@ section p {
     display: block;
 }
 
-.contact-methods {
+.contact_methods {
     display: flex;
     justify-content: space-between;
 }
@@ -105,4 +122,10 @@ input:focus, textarea:focus {
 }
 .social-links li a {
     text-decoration: none;
+}
+
+footer {
+    background-color: #ecf0f1;
+    color: #182C61;
+    padding: 16px 8px;
 }
